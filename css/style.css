@@ -1,0 +1,19 @@
+/* 强化 APlayer 自身按钮样式，防止被主题样式污染 */
+.aplayer .aplayer-icon {
+    background: none !important;
+    border: none !important;
+    color: inherit !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* 修复播放进度条等默认按钮样式影响 */
+.aplayer .aplayer-icon svg {
+    fill: currentColor;
+}
+
+/* 避免按钮边框高亮 */
+.aplayer .aplayer-icon:focus {
+    outline: none;
+    box-shadow: none !important;
+}
