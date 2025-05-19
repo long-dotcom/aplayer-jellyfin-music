@@ -7,7 +7,7 @@
 ### 功能特点
 - 支持 Jellyfin 音乐库接入
 - 吸底播放器设计，不影响页面浏览体验
-- 支持 PJAX 页面加载，提升交互流畅性
+- 当前版本暂不支持播放器的不间断播放功能。如需实现该效果，请配合使用 `OOW PJAX` 插件。
 
 ### 安装步骤
 1. 下载插件并上传到您的 WordPress 插件目录。
@@ -25,30 +25,3 @@
 ### 注意事项
 - 确保您的 Jellyfin 服务器正在运行，并且可以从 WordPress 服务器访问。
 - 确保您在 Jellyfin 中已经设置了音乐库，并且所选用户有权限访问该库。
-
-## English Description
-
-**APlayer Jellyfin Music Player** is a WordPress plugin that implements a bottom-fixed music player using **APlayer + Jellyfin + localStorage**.
-
-### Features
-- Integration with Jellyfin music library
-- Bottom-fixed player design for non-intrusive browsing experience
-- Support for PJAX page loading to enhance interaction smoothness
-- Bilingual interface (Chinese/English)
-
-### Installation
-1. Download the plugin and upload it to your WordPress plugins directory.
-2. Activate the plugin from the WordPress admin panel.
-3. Go to **Settings > APlayer Jellyfin** to configure your Jellyfin server information.
-4. After saving the settings, you will see the player on the frontend pages.
-
-### Configuration
-- **Jellyfin Server URL**: Enter your Jellyfin server address (e.g., http://localhost:8096)
-- **User ID**: The user ID for the user who will play music in Jellyfin
-- **API Key**: Your Jellyfin API key
-- **Device ID**: Device ID
-- **Music Library ID**: The ID of the music library you want to use
-
-### Notes
-- Ensure your Jellyfin server is running and accessible from the WordPress server.
-- Ensure you have set up a music library in Jellyfin and the selected user has access to it.

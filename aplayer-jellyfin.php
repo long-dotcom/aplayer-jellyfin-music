@@ -26,11 +26,6 @@ function aplayer_jellyfin_enqueue_scripts() {
     wp_enqueue_script('aplayer-player-js', APLAYER_JELLYFIN_URL . 'js/player.js', ['aplayer-script'], null, true);
     wp_enqueue_style('aplayer-custom-style', APLAYER_JELLYFIN_URL . 'css/style.css');
 
-    // PJAX 脚本：使用原生 PJAX 库 替换 jQuery PJAX
-    wp_enqueue_script('pjax', 'https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js', [], null, true);
-
-    // 注册一个空的 jmp_ajax 占位，稍后再由配置覆盖
-    wp_localize_script('aplayer-player-js', 'jmp_ajax', []);
 }
 add_action('wp_enqueue_scripts', 'aplayer_jellyfin_enqueue_scripts');
 
