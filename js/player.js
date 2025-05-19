@@ -29,23 +29,3 @@ function initializePlayer() {
             });
     }
 }
-
-// PJAX 初始化逻辑
-function initializePjax() {
-    if (typeof Pjax === 'undefined') {
-        console.error('[ERROR] Pjax 未定义，请确保已正确加载 PJAX 库');
-        return;
-    }
-
-    console.info('[INFO] 正在初始化 PJAX...');
-    // 使用原生 PJAX 库的初始化方式
-    new Pjax({
-        elements: "a:not([target='_blank']):not([no-pjax])",  // 避免外链和特殊链接
-        selectors: ["title", "#content"]
-    });
-}
-
-// 在 DOMContentLoaded 事件监听器外部定义完 initializePjax 后再调用它
-document.addEventListener('DOMContentLoaded', function () {
-    initializePjax();
-});

@@ -1,4 +1,3 @@
-
 <div class="wrap">
     <h1>APlayer Jellyfin 设置</h1>
     <form method="post" action="options.php">
@@ -44,6 +43,7 @@
             <ul>
                 <li>确保您的Jellyfin服务器正在运行，并且可以从WordPress服务器访问</li>
                 <li>确保您在Jellyfin中已经设置了音乐库，并且所选用户有权限访问该库</li>
+                <li>当前版本暂不支持播放器的不间断播放功能。如需实现该效果，请配合使用 `OOW PJAX` 插件。</li>
                 <li>如果遇到问题，请检查浏览器控制台和服务器错误日志以获取更多信息</li>
             </ul>
 
